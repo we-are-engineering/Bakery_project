@@ -72,3 +72,5 @@ def view_delivery(request):
 def view_order(request):
     return render(request,'view_order.html')
 
+
+
