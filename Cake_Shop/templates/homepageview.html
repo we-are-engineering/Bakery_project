@@ -1,18 +1,447 @@
+{% include "navbar.html" %}
+<br />
+<br /><br />
+{% block body %}
 <html lang="en">
-    {%load static%}
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <title>Home</title>
-    <style>
-      
-    </style>
-</head>
+  {%load static%}
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<body style="background: #E5E5E5;">
-    {% include 'navbar.html' %}
+    <title>Home</title>
+   
+  </head>
+
+  <body>
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="static/c1.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <b><h5 style='color:black'>DELICIOUS CAKES</h5></b>
+            <h7 style='color:yellow'>Welcome to the best cake shop in India , Inaugarted by Prime Minister Narendra Modi</h7>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="static/c2.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="..." class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+      </div>
+      
+         
+  </div>
+    
+    
   
-</body>
+     
+    <div class="container my-3">
+      <h1 class="my-2 text-center my-4 ">Select From The Range Of Cakes And Pastries</h1>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="static/cake2.avif" class="d-block w-100" alt="...">
+
+            <div class="card-body">
+              <p class="card-text">
+                Savor the irresistible allure of our Chocolate Cake, a symphony of rich cocoa flavors and velvety indulgence.
+              </p>
+             <div> <b>Chocalate cake <span>₹ 400</span>  </b></div>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button
+                    type="button"
+                    class="btn btn-sm btn-outline-secondary"
+                  >
+                    View
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-sm btn-outline-secondary"
+                  >
+                    Edit
+                  </button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="static/cake5.jpg" class="d-block w-100" alt="...">
+
+            <div class="card-body">
+              <p class="card-text">
+                Indulge in the heavenly blend of fluffy vanilla cake layers, luscious whipped cream, and sweet cherries in our White Forest cake.</p>
+                <div> <b>White Forest cake <span>₹ 450</span>  </b></div>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button
+                    type="button"
+                    class="btn btn-sm btn-outline-secondary"
+                  >
+                    View
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-sm btn-outline-secondary"
+                  >
+                    Edit
+                  </button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="static/cake6.jpg" class="d-block w-100" alt="...">
+
+            <div class="card-body">
+              <p class="card-text">
+                Delight in the tropical essence of our Pineapple Cake, where juicy pineapple chunks meet fluffy cake layers for a burst of sunny sweetness.
+              </p>
+              <div> <b>Pineapple cake <span>₹ 300</span>  </b></div>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button
+                    type="button"
+                    class="btn btn-sm btn-outline-secondary"
+                  >
+                    View
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-sm btn-outline-secondary"
+                  >
+                    Edit
+                  </button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="https://wallpapercave.com/wp/wp2004021.jpg" class="d-block w-100" alt="...">   
+
+            <div class="card-body">
+              <p class="card-text">
+                
+Experience the decadent richness of our Chocolate Pastry, a velvety delight that melts in your mouth with every bite.
+              </p>
+              <div> <b>Chocalate Pastry <span>₹ 200</span>  </b></div>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button
+                    type="button"
+                    class="btn btn-sm btn-outline-secondary"
+                  >
+                    View
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-sm btn-outline-secondary"
+                  >
+                    Edit
+                  </button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="static/pastry9.jpg" class="d-block w-100" alt="...">  
+            <div class="card-body">
+              <p class="card-text">
+                Indulge in the delightful medley of flavors with our Mixed Pastry, offering a tantalizing fusion of sweet and savory sensations in every bite.
+              </p>
+              <div> <b>Mixed Pastry <span>₹ 400</span>  </b></div>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button
+                    type="button"
+                    class="btn btn-sm btn-outline-secondary"
+                  >
+                    View
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-sm btn-outline-secondary"
+                  >
+                    Edit
+                  </button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="static/pastry7.jpeg" class="d-block w-100" alt="...">  
+
+            <div class="card-body">
+              <p class="card-text">
+                Indulge in the refreshing burst of fruity goodness with our Fruit Pastry, featuring a medley of vibrant flavors and juicy fruit fillings nestled within delicate layers of pastry.
+              </p>
+              <div> <b>Fruit Pastry <span>₹ 350</span>  </b></div>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button
+                    type="button"
+                    class="btn btn-sm btn-outline-secondary"
+                  >
+                    View
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-sm btn-outline-secondary"
+                  >
+                    Edit
+                  </button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+           
+            <img src="https://images.unsplash.com/photo-1535254973040-607b474cb50d?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="..."> 
+            <div class="card-body">
+              <p class="card-text">
+                Indulge in the rich, buttery goodness of our classic butter cake, with its moist crumb and irresistible melt-in-your-mouth texture.
+              </p>
+              <div> <b>Classic Butter Cake <span>₹ 600</span>  </b></div>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button
+                    type="button"
+                    class="btn btn-sm btn-outline-secondary"
+                  >
+                    View
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-sm btn-outline-secondary"
+                  >
+                    Edit
+                  </button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="https://images.unsplash.com/photo-1525257831700-183b9b8bf5c4?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="...">  
+
+            <div class="card-body">
+              <p class="card-text">
+                Savor the timeless elegance of our traditional tiered wedding cake, featuring layers of moist cake filled with delectable flavors and adorned with delicate frosting.
+              </p>
+              <div> <b>Tiered Wedding  Cake <span>₹ 650</span>  </b></div>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button
+                    type="button"
+                    class="btn btn-sm btn-outline-secondary"
+                  >
+                    View
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-sm btn-outline-secondary"
+                  >
+                    Edit
+                  </button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="https://images.unsplash.com/photo-1574538860416-baadc5d4ec57?q=80&w=1886&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="...">   
+            <div class="card-body">
+             {% comment %} <b> <p class="card-text">Wedding cake</p></b> {% endcomment %}
+
+            <div class="card-body">
+              <p class="card-text">
+                Enjoy the smooth and elegant taste of our fondant cake, with a delicate balance of sweetness and a flawless finish that's as beautiful as it is delicious.
+              </p><div> <b>Fondant Cake <span>₹ 700</span>  </b></div>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button
+                    type="button"
+                    class="btn btn-sm btn-outline-secondary"
+                  >
+                    View
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-sm btn-outline-secondary"
+                  >
+                    Edit
+                  </button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+   
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="static/donut1.jpg" class="d-block w-100" alt="...">
+
+            <div class="card-body">
+              <p class="card-text">
+                Delight in the rich decadence of our chocolate donut, featuring a moist, cocoa-infused interior and a velvety chocolate glaze.
+              </p>
+              <div> <b>Chocolate Donut <span>₹ 300</span>  </b></div>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button
+                    type="button"
+                    class="btn btn-sm btn-outline-secondary"
+                  >
+                    View
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-sm btn-outline-secondary"
+                  >
+                    Edit
+                  </button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="static/donut2.jpg" class="d-block w-100" alt="...">
+
+            <div class="card-body">
+              <p class="card-text">
+                Savor the classic sweetness of our vanilla donut, featuring a fluffy interior and a delicate vanilla glaze.
+              </p>
+              <div> <b>Vanila Donut <span>₹ 350</span>  </b></div>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button
+                    type="button"
+                    class="btn btn-sm btn-outline-secondary"
+                  >
+                    View
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-sm btn-outline-secondary"
+                  >
+                    Edit
+                  </button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="static/donut4.avif" class="d-block w-100" alt="...">
+
+            <div class="card-body">
+              <p class="card-text">
+                Indulge in the tart sweetness of our raspberry donut, filled with luscious raspberry jam and topped with a delicate raspberry glaze.
+              </p><div> <b>Rapberry Donut <span>₹ 400</span>  </b></div>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button
+                    type="button"
+                    class="btn btn-sm btn-outline-secondary"
+                  >
+                    View
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-sm btn-outline-secondary"
+                  >
+                    Edit
+                  </button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+<br><br>
+  <div class='heading my-4' >
+    <h1 >About Us</h1>
+    <br>
+  <p>Delicious Cakes Bakery, nestled in the heart of India, is a culinary haven for cake enthusiasts. With a passion for perfection, we craft each cake with the finest ingredients and utmost care. From classic flavors like rich chocolate and velvety vanilla to exotic creations, our cakes tantalize taste buds and delight senses. Whether it's a special celebration or a simple indulgence, our delectable cakes promise to elevate every moment. Experience the epitome of sweetness at Delicious Cakes Bakery, where every slice is a symphony of flavor.</p>
+  </div>   
+  <div class='container'>
+    <section class="about">
+      <div class="about-image">
+        <img src="static/about.avif" alt="">
+      </div>
+      
+    </section>
+  </div> 
+  </body>
 </html>
+{% endblock body %}
